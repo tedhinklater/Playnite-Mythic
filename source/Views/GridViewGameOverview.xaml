@@ -1,4 +1,4 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
                     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
                     xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
@@ -186,7 +186,6 @@
                                               x:Name="PART_ScrollViewHost">
                                     <Grid>
                                         <Grid.RowDefinitions>
-                                            <RowDefinition Height="Auto" />
                                             <RowDefinition Height="Auto" />
                                             <RowDefinition Height="Auto" />
                                             <RowDefinition Height="Auto" />
@@ -629,7 +628,7 @@
                                                 <Separator Background="{DynamicResource GridViewSeparatorBrush}" Margin="0,5,0,5"/>
                                                 <HtmlTextView Name="PART_HtmlDescription"
                                                               HtmlFontSize="{DynamicResource FontSize}"
-                                                              HtmlFontFamily="{DynamicResource FontFamily}"
+                                                              HtmlFontFamily="Roboto Condensed"
                                                               HtmlForeground="{DynamicResource TextColor}"
                                                               LinkForeground="{DynamicResource GlyphColor}"                                      
                                                               ScrollViewer.HorizontalScrollBarVisibility="Disabled"
@@ -637,20 +636,6 @@
                                             </StackPanel>
                                         </Expander>
 
-                                        <Expander Grid.Row="{DynamicResource GridViewSectionOrderVndb}"
-                                                  IsExpanded="True"
-                                                  Visibility="{PluginSettings Plugin=VNDBNexus, Path=IsControlVisible, FallbackValue=Collapsed, Converter={StaticResource BooleanToVisibilityConverter}}"
-                                                  Margin="0,0,5,0">
-                                            <Expander.Header>
-                                                <TextBlock Text="VNDB" Style="{DynamicResource BaseTextBlockStyle}"
-                                                           Cursor="Hand" Foreground="{DynamicResource DetailsViewDetailsLabelForegroundBrush}"
-                                                           FontWeight="SemiBold" FontSize="{DynamicResource FontSizeLarge}" />
-                                            </Expander.Header>
-                                            <StackPanel Margin="0,0,0,25">
-                                                <ContentControl x:Name="VNDBNexus_VndbVisualNovelViewControl" Margin="0,10,20,0" />
-                                            </StackPanel>
-                                        </Expander>
-                                        
                                         <!--#region SuccessStory-->
                                         <Expander Grid.Row="{DynamicResource GridViewSectionOrderSuccessStory}"
                                                   IsExpanded="True"
@@ -917,20 +902,6 @@
                                                     <ContentControl x:Name="GameRelations_SamePublisherControl" Margin="0,5,0,0" />
                                                 </Expander>
 
-                                            </StackPanel>
-                                        </Expander>
-
-                                        <Expander Grid.Row="{DynamicResource GridViewSectionOrderSteamScreenshots}"
-                                                  IsExpanded="True"
-                                                  Visibility="{PluginSettings Plugin=SteamScreenshots, Path=IsControlVisible, FallbackValue=Collapsed, Converter={StaticResource BooleanToVisibilityConverter}}"
-                                                  Margin="0,0,5,0">
-                                            <Expander.Header>
-                                                <TextBlock Text="{DynamicResource LOC_SteamScreenshots_SteamScreenshotsLabel}" Style="{DynamicResource BaseTextBlockStyle}"
-                                                           Cursor="Hand" Foreground="{DynamicResource DetailsViewDetailsLabelForegroundBrush}"
-                                                           FontWeight="SemiBold" FontSize="{DynamicResource FontSizeLarge}" />
-                                            </Expander.Header>
-                                            <StackPanel Margin="0,0,0,25">
-                                                <ContentControl x:Name="SteamScreenshots_SteamScreenshotsViewControl" Margin="0,10,20,0" />
                                             </StackPanel>
                                         </Expander>
                                     </Grid>
