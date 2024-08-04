@@ -1,4 +1,5 @@
-![DownloadCount](https://img.shields.io/github/downloads/darklinkpower/Mythic/total.svg)
+![Screenshot 2024-08-04 180447](https://github.com/user-attachments/assets/08543bb8-fd91-4b6c-86c5-3dad749c3bd7)
+
 # Mythic
 Theme inspired by Epic Games Launcher for [Playnite](https://github.com/JosefNemec/Playnite) Desktop Mode.
 
