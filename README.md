@@ -1,5 +1,6 @@
 ![Screenshot 2024-08-04 180447](https://github.com/user-attachments/assets/08543bb8-fd91-4b6c-86c5-3dad749c3bd7)
 
+Instructions: Just download Mythic as usual but paste the [release](https://github.com/tedhinklater/Playnite-Mythic/releases) over Playnite\Themes\Desktop\Mythic_e231056c-4fa7-49d8-ad2b-0a6f1c589eb8\
 # Mythic
 Theme inspired by Epic Games Launcher for [Playnite](https://github.com/JosefNemec/Playnite) Desktop Mode.
 
